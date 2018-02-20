@@ -38,6 +38,7 @@ module.exports = {
                     options: {
                         name: '[name].[ext]',
                         useRelativePath: true,
+                        publicPath: './',
                     },
                 },
             },
