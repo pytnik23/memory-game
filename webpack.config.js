@@ -33,7 +33,13 @@ module.exports = {
             {
                 test: /\.(gif|svg|jpg|png)$/,
                 exclude: /node_modules/,
-                use: 'file-loader',
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        useRelativePath: true,
+                    },
+                },
             },
         ],
     },
